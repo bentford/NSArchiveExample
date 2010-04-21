@@ -1,0 +1,8 @@
+This is a example of how you can use NSArchive instead of SqlLite or Core Data.
+
+Advantages:
+It is super simple and very nimble, and also scales fairly big.
+
+Disadvantages:
+Not a relational datastore and you can't do joins
+

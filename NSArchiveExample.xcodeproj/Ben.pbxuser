@@ -1,0 +1,126 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* NSArchiveExampleAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {800, 905}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 529}";
+		};
+	};
+	1D3623250D0F684500981E51 /* NSArchiveExampleAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {800, 905}}";
+			sepNavSelRange = "{266, 0}";
+			sepNavVisRange = "{0, 849}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* NSArchiveExample */ = {
+		activeExec = 0;
+		executables = (
+			B5BFA7F6117F9A63008B450B /* NSArchiveExample */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = B5BFA7F6117F9A63008B450B /* NSArchiveExample */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* NSArchiveExample */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* NSArchiveExample */,
+		);
+		codeSenseManager = B5BFA801117F9A81008B450B /* Code sense */;
+		executables = (
+			B5BFA7F6117F9A63008B450B /* NSArchiveExample */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 293575267;
+			PBXWorkspaceStateSaveDate = 293575267;
+		};
+		sourceControlManager = B5BFA800117F9A81008B450B /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	B5BFA7F6117F9A63008B450B /* NSArchiveExample */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = NSArchiveExample;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	B5BFA800117F9A81008B450B /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	B5BFA801117F9A81008B450B /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	B5BFA802117F9A96008B450B /* Persistance.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {800, 905}}";
+			sepNavSelRange = "{622, 0}";
+			sepNavVisRange = "{0, 628}";
+		};
+	};
+	B5BFA803117F9A96008B450B /* Persistance.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1450, 2472}}";
+			sepNavSelRange = "{2824, 0}";
+			sepNavVisRange = "{0, 1153}";
+		};
+	};
+	B5BFA81B117F9CAD008B450B /* Person.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {925, 915}}";
+			sepNavSelRange = "{511, 0}";
+			sepNavVisRange = "{0, 517}";
+		};
+	};
+	B5BFA81C117F9CAD008B450B /* Person.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {925, 915}}";
+			sepNavSelRange = "{260, 0}";
+			sepNavVisRange = "{0, 1166}";
+		};
+	};
+	B5BFA83B117FA0E3008B450B /* Model.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {925, 915}}";
+			sepNavSelRange = "{161, 0}";
+			sepNavVisRange = "{0, 181}";
+		};
+	};
+	B5BFA841117FA1AA008B450B /* BossViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {925, 915}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 247}";
+			sepNavWindowFrame = "{{38, 157}, {1354, 1235}}";
+		};
+	};
+}
