@@ -1,3 +1,6 @@
+NSArchiveExample:
+=================
+
 Purpose:
 --------
 
@@ -15,11 +18,11 @@ Arrays and Dictionaries, oh my!
 
 
 Why NSArchive?
-==============
+--------------
 
 Advantages:
--It is super simple and very nimble, and also scales fairly big.
+* It is super simple and very nimble, and also scales fairly big.
 
 Disadvantages:
--Not a relational datastore and you can't do joins
+* Not a relational datastore and you can't do joins
 
