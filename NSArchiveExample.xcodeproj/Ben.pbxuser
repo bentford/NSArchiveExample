@@ -32,8 +32,30 @@
 			B5BFA7F6117F9A63008B450B /* NSArchiveExample */,
 		);
 		perUserDictionary = {
-			PBXPerProjectTemplateStateSaveDate = 293575267;
-			PBXWorkspaceStateSaveDate = 293575267;
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					286,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 293613031;
+			PBXWorkspaceStateSaveDate = 293613031;
 		};
 		sourceControlManager = B5BFA800117F9A81008B450B /* Source Control */;
 		userBuildSettings = {

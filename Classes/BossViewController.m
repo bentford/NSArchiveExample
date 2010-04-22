@@ -38,6 +38,6 @@
     [Persistance sharedService].boss.firstName = firstName.text;
     [Persistance sharedService].boss.lastName = lastName.text;
     [Persistance sharedService].boss.age = [age.text intValue];
-    [Persistance sharedService].boss.isFullTime = isFullTime.state;
+    [Persistance sharedService].boss.isFullTime = isFullTime.on;
 }
 @end

@@ -31,8 +31,8 @@
     if( self ) {
         self.firstName = [coder decodeObjectForKey:@"firstName"];
         self.lastName = [coder decodeObjectForKey:@"lastName"];
-        self.age = [[coder decodeObjectForKey:@"age"] intValue];
-        self.age = [[coder decodeObjectForKey:@"isFullTime"] boolValue];        
+        self.age = [coder decodeIntForKey:@"age"];
+        self.isFullTime = [coder decodeBoolForKey:@"isFullTime"];        
     }
     return self;
 }
@@ -40,8 +40,8 @@
 - (void)encodeWithCoder:(NSCoder *)coder {
     [coder encodeObject:self.firstName forKey:@"firstName"];
     [coder encodeObject:self.firstName forKey:@"firstName"];    
-    [coder encodeObject:[NSNumber numberWithInt:self.age] forKey:@"age"];
-    [coder encodeObject:[NSNumber numberWithInt:self.isFullTime] forKey:@"isFullTime"]; 
+    [coder encodeInt:self.age forKey:@"age"];
+    [coder encodeBool:self.isFullTime forKey:@"isFullTime"]; 
 }
 #pragma mark -
 
