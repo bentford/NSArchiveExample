@@ -39,12 +39,15 @@
 
 - (void)encodeWithCoder:(NSCoder *)coder {
     [coder encodeObject:self.firstName forKey:@"firstName"];
-    [coder encodeObject:self.firstName forKey:@"firstName"];    
+    [coder encodeObject:self.firstName forKey:@"lastName"];    
     [coder encodeInt:self.age forKey:@"age"];
     [coder encodeBool:self.isFullTime forKey:@"isFullTime"]; 
 }
 #pragma mark -
 
+- (NSString *)fullName {
+	return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
+}
 
 - (void)dealloc {
     self.firstName = nil;
