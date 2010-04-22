@@ -28,7 +28,7 @@
 
 - (void)loadBoss {
     firstName.text = [Persistance sharedService].boss.firstName;
-    lastName.text = [Persistance sharedService].boss.firstName;
+    lastName.text = [Persistance sharedService].boss.lastName;
     age.text = [NSString stringWithFormat:@"%d",[Persistance sharedService].boss.age];
     [isFullTime setOn:[Persistance sharedService].boss.isFullTime animated:NO];
 }
