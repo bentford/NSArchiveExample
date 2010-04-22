@@ -20,6 +20,8 @@
 @property (nonatomic) NSInteger age;
 @property (nonatomic) BOOL isFullTime;
 
+@property (nonatomic,readonly) NSString *fullName;
+
 + (Person *)defaultPerson;
 - (id)init;
 @end
