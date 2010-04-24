@@ -39,7 +39,7 @@
 
 - (void)encodeWithCoder:(NSCoder *)coder {
     [coder encodeObject:self.firstName forKey:@"firstName"];
-    [coder encodeObject:self.firstName forKey:@"lastName"];    
+    [coder encodeObject:self.lastName forKey:@"lastName"];    
     [coder encodeInt:self.age forKey:@"age"];
     [coder encodeBool:self.isFullTime forKey:@"isFullTime"]; 
 }
