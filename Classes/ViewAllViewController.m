@@ -20,6 +20,25 @@
 #pragma mark -
 
 #pragma mark UITableViewDataSource
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+	switch (section) {
+		case 0:
+			return @"Boss";
+			break;
+		case 1:
+			return @"Managers";
+			break;
+		case 2:
+			return @"Employees";
+			break;
+	}
+	return @"error";
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	return 3;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	switch (section) {
 		case 0:
