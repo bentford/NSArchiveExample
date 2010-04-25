@@ -1,21 +1,21 @@
 //
-//  BossViewController.h
+//  PersonEntryViewController.h
 //  NSArchiveExample
 //
-//  Created by Ben Ford on 4/21/10.
+//  Created by Ben Ford on 4/24/10.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 
-@interface BossViewController : UIViewController {
+@interface PersonEntryViewController : UIViewController {
     IBOutlet UITextField *firstName;
     IBOutlet UITextField *lastName;
     IBOutlet UITextField *age;
     IBOutlet UISwitch *isFullTime;
+	IBOutlet UILabel *titleLabel;
 }
-
-- (IBAction)saveBoss;
+- (IBAction)savePerson;
 - (void)loadBoss;
 @end

@@ -10,7 +10,7 @@
 #import "Person.h"
 
 @implementation Persistance
-@synthesize boss, managers, employees;
+@synthesize boss, dictionary, array;
 //taken from apple code example:  
 //http://developer.apple.com/mac/library/documentation/Cocoa/Conceptual/CocoaFundamentals/CocoaObjects/CocoaObjects.html#//apple_ref/doc/uid/TP40002974-CH4-SW32
 
@@ -75,31 +75,31 @@ static Persistance *sharedGlobalInstance = nil;
     
     // managers
     NSString *managerFilePath = [Persistance pathForDocumentsDirectoryFile:@"managers.archive"];
-    self.managers = [NSKeyedUnarchiver unarchiveObjectWithFile:managerFilePath];
+    self.dictionary = [NSKeyedUnarchiver unarchiveObjectWithFile:managerFilePath];
     
-    if( !self.managers ) 
-        self.managers = [NSMutableDictionary dictionaryWithCapacity:0];
+    if( !self.dictionary ) 
+        self.dictionary = [NSMutableDictionary dictionaryWithCapacity:0];
     
     
     
     // employees
     NSString *employeesFilePath = [Persistance pathForDocumentsDirectoryFile:@"employees.archive"];
-    self.employees = [NSKeyedUnarchiver unarchiveObjectWithFile:employeesFilePath];
+    self.array = [NSKeyedUnarchiver unarchiveObjectWithFile:employeesFilePath];
     
-    if( !self.employees ) 
-        self.employees = [NSMutableArray arrayWithCapacity:0];
+    if( !self.array ) 
+        self.array = [NSMutableArray arrayWithCapacity:0];
 }
 
 - (void)saveToDisk {
     
-    NSString *bossFilePath = [Persistance pathForDocumentsDirectoryFile:@"boss.archive"];
-    [NSKeyedArchiver archiveRootObject:self.boss toFile:bossFilePath];
+    NSString *dictionaryFilePath = [Persistance pathForDocumentsDirectoryFile:@"boss.archive"];
+    [NSKeyedArchiver archiveRootObject:self.boss toFile:dictionaryFilePath];
     
     NSString *managersFilePath = [Persistance pathForDocumentsDirectoryFile:@"managers.archive"];
-    [NSKeyedArchiver archiveRootObject:self.managers toFile:managersFilePath];
+    [NSKeyedArchiver archiveRootObject:self.dictionary toFile:managersFilePath];
     
-    NSString *employeesFilePath = [Persistance pathForDocumentsDirectoryFile:@"employees.archive"];
-    [NSKeyedArchiver archiveRootObject:self.employees toFile:employeesFilePath];
+    NSString *arrayFilePath = [Persistance pathForDocumentsDirectoryFile:@"employees.archive"];
+    [NSKeyedArchiver archiveRootObject:self.array toFile:arrayFilePath];
     
 }
 
@@ -116,8 +116,8 @@ static Persistance *sharedGlobalInstance = nil;
 
 - (void)dealloc {
     self.boss = nil;
-    self.employees = nil;
-    self.managers = nil;
+    self.dictionary = nil;
+    self.array = nil;
     
     [super dealloc];
 }

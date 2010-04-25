@@ -13,13 +13,13 @@
 @interface Persistance : NSObject {
 
     Person *boss;
-    NSMutableDictionary *managers;
-    NSMutableArray *employees;
+    NSMutableDictionary *dictionary;
+    NSMutableArray *array;
 }
 
 @property (nonatomic,retain) Person *boss;
-@property (nonatomic,retain) NSMutableDictionary *managers;
-@property (nonatomic,retain) NSMutableArray *employees;
+@property (nonatomic,retain) NSMutableDictionary *dictionary;
+@property (nonatomic,retain) NSMutableArray *array;
 
 + (Persistance*) sharedService;
 

@@ -10,9 +10,10 @@
 #import "Model.h"
 
 @implementation ViewAllViewController
-
-- (void)viewDidLoad {
-	[super viewDidLoad];
+- (void)viewDidAppear:(BOOL)animated {
+	
+	// refresh everytime
+	[tableview reloadData];
 }
 
 #pragma mark UITableViewDelegate
@@ -23,13 +24,13 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
 	switch (section) {
 		case 0:
-			return @"Boss";
+			return @"Person Object";
 			break;
 		case 1:
-			return @"Managers";
+			return @"Dictionary";
 			break;
 		case 2:
-			return @"Employees";
+			return @"Array";
 			break;
 	}
 	return @"error";
@@ -45,10 +46,10 @@
 			return 1;
 			break;
 		case 1:
-			return [[Persistance sharedService].managers count];
+			return [[Persistance sharedService].dictionary count];
 			break;
 		case 2:
-			return [[Persistance sharedService].employees count];
+			return [[Persistance sharedService].array count];
 			break;
 		default:
 			return 1;
@@ -60,7 +61,7 @@
 	UITableViewCell *cell;
 	cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
 	if( cell == nil ) {
-		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewStylePlain reuseIdentifier:@"cell"] autorelease];
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"] autorelease];
 	}
 	Person *person = nil;
 	
@@ -69,11 +70,15 @@
 			cell.textLabel.text = [Persistance sharedService].boss.fullName;
 			break;
 		case 1:
-			person = [[Persistance sharedService].managers objectForKey:@"HeadManager"];
-			cell.textLabel.text = person.fullName;
+			if( [[[Persistance sharedService].dictionary allKeys] count] > indexPath.row ) {
+				NSString *key = [[[Persistance sharedService].dictionary allKeys] objectAtIndex:indexPath.row];
+				NSString *value = [[Persistance sharedService].dictionary objectForKey:key];
+				cell.textLabel.text = value;
+				cell.detailTextLabel.text = [NSString stringWithFormat:@"value for key: %@",key];
+			}			
 			break;
 		case 2:
-			person = [[Persistance sharedService].employees objectAtIndex:indexPath.row];
+			person = [[Persistance sharedService].array objectAtIndex:indexPath.row];
 			cell.textLabel.text = person.fullName;
 			break;
 		default:

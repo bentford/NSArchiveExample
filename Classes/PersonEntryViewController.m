@@ -1,29 +1,25 @@
-//
-//  BossViewController.m
+    //
+//  PersonEntryViewController.m
 //  NSArchiveExample
 //
-//  Created by Ben Ford on 4/21/10.
+//  Created by Ben Ford on 4/24/10.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "BossViewController.h"
+#import "PersonEntryViewController.h"
 #import "Model.h"
 
-@implementation BossViewController
-
-- (void)awakeFromNib {
-    
+@implementation PersonEntryViewController
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [firstName resignFirstResponder];
+    [lastName resignFirstResponder];
+    [age resignFirstResponder];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self loadBoss];    
-}
-- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    [firstName resignFirstResponder];
-    [lastName resignFirstResponder];
-    [age resignFirstResponder];
 }
 
 - (void)loadBoss {
@@ -33,11 +29,17 @@
     [isFullTime setOn:[Persistance sharedService].boss.isFullTime animated:NO];
 }
 
-- (IBAction)saveBoss {
-    
+- (IBAction)savePerson {
+	
     [Persistance sharedService].boss.firstName = firstName.text;
     [Persistance sharedService].boss.lastName = lastName.text;
     [Persistance sharedService].boss.age = [age.text intValue];
     [Persistance sharedService].boss.isFullTime = isFullTime.on;
 }
+
+- (void)dealloc {
+    [super dealloc];
+}
+
+
 @end
