@@ -63,7 +63,6 @@
 	if( cell == nil ) {
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"] autorelease];
 	}
-	Person *person = nil;
 	
 	switch (indexPath.section) {
 		case 0:
@@ -78,8 +77,7 @@
 			}			
 			break;
 		case 2:
-			person = [[Persistance sharedService].array objectAtIndex:indexPath.row];
-			cell.textLabel.text = person.fullName;
+			cell.textLabel.text = [[Persistance sharedService].array objectAtIndex:indexPath.row];
 			break;
 		default:
 			cell.textLabel.text = @"error";

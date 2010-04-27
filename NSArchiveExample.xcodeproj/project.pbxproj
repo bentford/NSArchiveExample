@@ -17,6 +17,8 @@
 		B52EA5E51182FC2D0065C4CA /* PersonEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52EA5E41182FC2D0065C4CA /* PersonEntryViewController.m */; };
 		B52EA600118439900065C4CA /* DictionaryEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52EA5FE118439900065C4CA /* DictionaryEntryViewController.m */; };
 		B52EA601118439900065C4CA /* DictionaryEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52EA5FF118439900065C4CA /* DictionaryEntryView.xib */; };
+		B52EA6921186EB390065C4CA /* ArrayEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52EA6901186EB390065C4CA /* ArrayEntryViewController.m */; };
+		B52EA6931186EB390065C4CA /* ArrayEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52EA6911186EB390065C4CA /* ArrayEntryView.xib */; };
 		B5B25F7F11803200001BA9A0 /* ViewAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B25F7D11803200001BA9A0 /* ViewAllViewController.m */; };
 		B5B25F8011803200001BA9A0 /* ViewAllView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B25F7E11803200001BA9A0 /* ViewAllView.xib */; };
 		B5BFA804117F9A96008B450B /* Persistance.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BFA803117F9A96008B450B /* Persistance.m */; };
@@ -41,6 +43,9 @@
 		B52EA5FD118439900065C4CA /* DictionaryEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryEntryViewController.h; sourceTree = "<group>"; };
 		B52EA5FE118439900065C4CA /* DictionaryEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryEntryViewController.m; sourceTree = "<group>"; };
 		B52EA5FF118439900065C4CA /* DictionaryEntryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DictionaryEntryView.xib; sourceTree = "<group>"; };
+		B52EA68F1186EB390065C4CA /* ArrayEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayEntryViewController.h; sourceTree = "<group>"; };
+		B52EA6901186EB390065C4CA /* ArrayEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayEntryViewController.m; sourceTree = "<group>"; };
+		B52EA6911186EB390065C4CA /* ArrayEntryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrayEntryView.xib; sourceTree = "<group>"; };
 		B5B25F7C11803200001BA9A0 /* ViewAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAllViewController.h; sourceTree = "<group>"; };
 		B5B25F7D11803200001BA9A0 /* ViewAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAllViewController.m; sourceTree = "<group>"; };
 		B5B25F7E11803200001BA9A0 /* ViewAllView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewAllView.xib; sourceTree = "<group>"; };
@@ -81,6 +86,9 @@
 				B52EA5FD118439900065C4CA /* DictionaryEntryViewController.h */,
 				B52EA5FE118439900065C4CA /* DictionaryEntryViewController.m */,
 				B52EA5FF118439900065C4CA /* DictionaryEntryView.xib */,
+				B52EA68F1186EB390065C4CA /* ArrayEntryViewController.h */,
+				B52EA6901186EB390065C4CA /* ArrayEntryViewController.m */,
+				B52EA6911186EB390065C4CA /* ArrayEntryView.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -193,6 +201,7 @@
 				B5BFA845117FA1B8008B450B /* PersonEntryView.xib in Resources */,
 				B5B25F8011803200001BA9A0 /* ViewAllView.xib in Resources */,
 				B52EA601118439900065C4CA /* DictionaryEntryView.xib in Resources */,
+				B52EA6931186EB390065C4CA /* ArrayEntryView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +219,7 @@
 				B5B25F7F11803200001BA9A0 /* ViewAllViewController.m in Sources */,
 				B52EA5E51182FC2D0065C4CA /* PersonEntryViewController.m in Sources */,
 				B52EA600118439900065C4CA /* DictionaryEntryViewController.m in Sources */,
+				B52EA6921186EB390065C4CA /* ArrayEntryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
