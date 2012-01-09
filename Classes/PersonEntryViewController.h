@@ -13,7 +13,7 @@
     IBOutlet UITextField *firstName;
     IBOutlet UITextField *lastName;
     IBOutlet UITextField *age;
-    IBOutlet UISwitch *isFullTime;
+    
 	IBOutlet UILabel *titleLabel;
 }
 - (IBAction)savePerson;

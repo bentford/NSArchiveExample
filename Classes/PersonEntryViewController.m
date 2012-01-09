@@ -18,15 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[Persistance sharedService] loadFromDisk];
+    [self loadBoss];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
-    [self loadBoss];    
+    
 }
 
 - (void)loadBoss {
+
     firstName.text = [Persistance sharedService].boss.firstName;
     lastName.text = [Persistance sharedService].boss.lastName;
     age.text = [NSString stringWithFormat:@"%d",[Persistance sharedService].boss.age];
-    [isFullTime setOn:[Persistance sharedService].boss.isFullTime animated:NO];
 }
 
 - (IBAction)savePerson {
@@ -34,7 +40,6 @@
     [Persistance sharedService].boss.firstName = firstName.text;
     [Persistance sharedService].boss.lastName = lastName.text;
     [Persistance sharedService].boss.age = [age.text intValue];
-    [Persistance sharedService].boss.isFullTime = isFullTime.on;
 }
 
 - (void)dealloc {

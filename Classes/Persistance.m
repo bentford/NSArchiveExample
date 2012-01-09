@@ -68,8 +68,8 @@ static Persistance *sharedGlobalInstance = nil;
     // boss
     NSString *bossFilePath = [Persistance pathForDocumentsDirectoryFile:@"boss.archive"];
     self.boss = [NSKeyedUnarchiver unarchiveObjectWithFile:bossFilePath];
-
-    if( !self.boss ) 
+    
+    if( self.boss == nil )
         self.boss = [Person defaultPerson];
     
     
@@ -77,7 +77,7 @@ static Persistance *sharedGlobalInstance = nil;
     NSString *managerFilePath = [Persistance pathForDocumentsDirectoryFile:@"managers.archive"];
     self.dictionary = [NSKeyedUnarchiver unarchiveObjectWithFile:managerFilePath];
     
-    if( !self.dictionary ) 
+    if( self.dictionary == nil ) 
         self.dictionary = [NSMutableDictionary dictionaryWithCapacity:0];
     
     
@@ -86,7 +86,7 @@ static Persistance *sharedGlobalInstance = nil;
     NSString *employeesFilePath = [Persistance pathForDocumentsDirectoryFile:@"employees.archive"];
     self.array = [NSKeyedUnarchiver unarchiveObjectWithFile:employeesFilePath];
     
-    if( !self.array ) 
+    if( self.array == nil )
         self.array = [NSMutableArray arrayWithCapacity:0];
 }
 

@@ -14,7 +14,7 @@
 @synthesize window;
 @synthesize tabBar;
 
-
+#pragma mark UIApplicationDelegate
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
     
     [[Persistance sharedService] loadFromDisk];
@@ -22,9 +22,14 @@
     [window makeKeyAndVisible];
 }
 
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+     [[Persistance sharedService] saveToDisk];    
+}
+
 - (void)applicationWillTerminate:(UIApplication *)application {
      [[Persistance sharedService] saveToDisk];
 }
+#pragma mark -
 
 - (void)dealloc {
     [tabBar release];
