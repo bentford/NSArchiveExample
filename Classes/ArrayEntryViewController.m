@@ -8,6 +8,7 @@
 
 #import "ArrayEntryViewController.h"
 #import "Persistance.h"
+#import "NSArray+Ext.h"
 
 @implementation ArrayEntryViewController
 
@@ -16,10 +17,10 @@
 }
 
 - (void)loadData {
-	value1.text = [[Persistance sharedService].array objectAtIndex:0];
-	value2.text = [[Persistance sharedService].array objectAtIndex:1];
-	value3.text = [[Persistance sharedService].array objectAtIndex:2];
-	value4.text = [[Persistance sharedService].array objectAtIndex:3];
+	value1.text = [[Persistance sharedService].array extObjectAtIndexOrNil:0];
+	value2.text = [[Persistance sharedService].array extObjectAtIndexOrNil:1];
+	value3.text = [[Persistance sharedService].array extObjectAtIndexOrNil:2];
+	value4.text = [[Persistance sharedService].array extObjectAtIndexOrNil:3];
 }
 
 - (IBAction)save {

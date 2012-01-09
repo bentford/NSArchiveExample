@@ -19,6 +19,7 @@
 		B52EA601118439900065C4CA /* DictionaryEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52EA5FF118439900065C4CA /* DictionaryEntryView.xib */; };
 		B52EA6921186EB390065C4CA /* ArrayEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52EA6901186EB390065C4CA /* ArrayEntryViewController.m */; };
 		B52EA6931186EB390065C4CA /* ArrayEntryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52EA6911186EB390065C4CA /* ArrayEntryView.xib */; };
+		B569D40114BBAF5800F46D4B /* NSArray+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = B569D40014BBAF5800F46D4B /* NSArray+Ext.m */; };
 		B5B25F7F11803200001BA9A0 /* ViewAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B25F7D11803200001BA9A0 /* ViewAllViewController.m */; };
 		B5B25F8011803200001BA9A0 /* ViewAllView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B25F7E11803200001BA9A0 /* ViewAllView.xib */; };
 		B5BFA804117F9A96008B450B /* Persistance.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BFA803117F9A96008B450B /* Persistance.m */; };
@@ -46,6 +47,8 @@
 		B52EA68F1186EB390065C4CA /* ArrayEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayEntryViewController.h; sourceTree = "<group>"; };
 		B52EA6901186EB390065C4CA /* ArrayEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayEntryViewController.m; sourceTree = "<group>"; };
 		B52EA6911186EB390065C4CA /* ArrayEntryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrayEntryView.xib; sourceTree = "<group>"; };
+		B569D3FF14BBAF5800F46D4B /* NSArray+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Ext.h"; sourceTree = "<group>"; };
+		B569D40014BBAF5800F46D4B /* NSArray+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Ext.m"; sourceTree = "<group>"; };
 		B5B25F7C11803200001BA9A0 /* ViewAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAllViewController.h; sourceTree = "<group>"; };
 		B5B25F7D11803200001BA9A0 /* ViewAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAllViewController.m; sourceTree = "<group>"; };
 		B5B25F7E11803200001BA9A0 /* ViewAllView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewAllView.xib; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B569D40214BBAF5A00F46D4B /* Extension */,
 				B5BFA81E117F9CB4008B450B /* Model */,
 				1D3623240D0F684500981E51 /* NSArchiveExampleAppDelegate.h */,
 				1D3623250D0F684500981E51 /* NSArchiveExampleAppDelegate.m */,
@@ -140,6 +144,15 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B569D40214BBAF5A00F46D4B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B569D3FF14BBAF5800F46D4B /* NSArray+Ext.h */,
+				B569D40014BBAF5800F46D4B /* NSArray+Ext.m */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		B5BFA81E117F9CB4008B450B /* Model */ = {
@@ -227,6 +240,7 @@
 				B52EA5E51182FC2D0065C4CA /* PersonEntryViewController.m in Sources */,
 				B52EA600118439900065C4CA /* DictionaryEntryViewController.m in Sources */,
 				B52EA6921186EB390065C4CA /* ArrayEntryViewController.m in Sources */,
+				B569D40114BBAF5800F46D4B /* NSArray+Ext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
