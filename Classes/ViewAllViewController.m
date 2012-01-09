@@ -66,7 +66,7 @@
 	
 	switch (indexPath.section) {
 		case 0:
-			cell.textLabel.text = [Persistance sharedService].boss.fullName;
+			cell.textLabel.text = [NSString stringWithFormat:@"Name: %@, Age: %d",[Persistance sharedService].boss.fullName, [Persistance sharedService].boss.age];
 			break;
 		case 1:
 			if( [[[Persistance sharedService].dictionary allKeys] count] > indexPath.row ) {
