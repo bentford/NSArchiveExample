@@ -19,7 +19,7 @@
     
     [[Persistance sharedService] loadFromDisk];
     
-    [window addSubview:tabBar.view];
+    [window makeKeyAndVisible];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
