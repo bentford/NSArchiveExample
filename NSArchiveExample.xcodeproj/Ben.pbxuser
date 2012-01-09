@@ -2,16 +2,16 @@
 {
 	1D3623240D0F684500981E51 /* NSArchiveExampleAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {925, 915}}";
-			sepNavSelRange = "{480, 0}";
-			sepNavVisRange = "{0, 489}";
+			sepNavIntBoundsRect = "{{0, 0}, {800, 905}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 529}";
 		};
 	};
 	1D3623250D0F684500981E51 /* NSArchiveExampleAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {925, 892}}";
-			sepNavSelRange = "{442, 0}";
-			sepNavVisRange = "{0, 689}";
+			sepNavIntBoundsRect = "{{0, 0}, {800, 905}}";
+			sepNavSelRange = "{266, 0}";
+			sepNavVisRange = "{0, 849}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* NSArchiveExample */ = {
@@ -32,42 +32,8 @@
 			B5BFA7F6117F9A63008B450B /* NSArchiveExample */,
 		);
 		perUserDictionary = {
-			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
-				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
-				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
-				PBXFileTableDataSourceColumnWidthsKey = (
-					20,
-					747,
-					20,
-					48.16259765625,
-					43,
-					43,
-					20,
-				);
-				PBXFileTableDataSourceColumnsKey = (
-					PBXFileDataSource_FiletypeID,
-					PBXFileDataSource_Filename_ColumnID,
-					PBXFileDataSource_Built_ColumnID,
-					PBXFileDataSource_ObjectSize_ColumnID,
-					PBXFileDataSource_Errors_ColumnID,
-					PBXFileDataSource_Warnings_ColumnID,
-					PBXFileDataSource_Target_ColumnID,
-				);
-			};
 			PBXPerProjectTemplateStateSaveDate = 293575267;
 			PBXWorkspaceStateSaveDate = 293575267;
-		};
-		perUserProjectItems = {
-			B5BFA8B0117FB22A008B450B /* PBXTextBookmark */ = B5BFA8B0117FB22A008B450B /* PBXTextBookmark */;
-			B5BFA8B1117FB22A008B450B /* PBXTextBookmark */ = B5BFA8B1117FB22A008B450B /* PBXTextBookmark */;
-			B5BFA8B2117FB22A008B450B /* PBXTextBookmark */ = B5BFA8B2117FB22A008B450B /* PBXTextBookmark */;
-			B5BFA8B3117FB22A008B450B /* PBXTextBookmark */ = B5BFA8B3117FB22A008B450B /* PBXTextBookmark */;
-			B5BFA8B4117FB22A008B450B /* PBXTextBookmark */ = B5BFA8B4117FB22A008B450B /* PBXTextBookmark */;
-			B5BFA8B5117FB22A008B450B /* PBXTextBookmark */ = B5BFA8B5117FB22A008B450B /* PBXTextBookmark */;
-			B5BFA8B6117FB22A008B450B /* PBXTextBookmark */ = B5BFA8B6117FB22A008B450B /* PBXTextBookmark */;
-			B5BFA8B7117FB22A008B450B /* PBXTextBookmark */ = B5BFA8B7117FB22A008B450B /* PBXTextBookmark */;
-			B5BFA8B8117FB22A008B450B /* PBXTextBookmark */ = B5BFA8B8117FB22A008B450B /* PBXTextBookmark */;
-			B5BFA8B9117FB22A008B450B /* PBXTextBookmark */ = B5BFA8B9117FB22A008B450B /* PBXTextBookmark */;
 		};
 		sourceControlManager = B5BFA800117F9A81008B450B /* Source Control */;
 		userBuildSettings = {
@@ -89,7 +55,6 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
-		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -117,30 +82,30 @@
 	};
 	B5BFA802117F9A96008B450B /* Persistance.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {925, 915}}";
-			sepNavSelRange = "{162, 0}";
-			sepNavVisRange = "{0, 610}";
+			sepNavIntBoundsRect = "{{0, 0}, {800, 905}}";
+			sepNavSelRange = "{622, 0}";
+			sepNavVisRange = "{0, 628}";
 		};
 	};
 	B5BFA803117F9A96008B450B /* Persistance.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1450, 2632}}";
-			sepNavSelRange = "{181, 0}";
-			sepNavVisRange = "{1191, 1216}";
+			sepNavIntBoundsRect = "{{0, 0}, {1450, 2472}}";
+			sepNavSelRange = "{2824, 0}";
+			sepNavVisRange = "{0, 1153}";
 		};
 	};
 	B5BFA81B117F9CAD008B450B /* Person.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {925, 892}}";
-			sepNavSelRange = "{522, 0}";
-			sepNavVisRange = "{0, 528}";
+			sepNavIntBoundsRect = "{{0, 0}, {925, 915}}";
+			sepNavSelRange = "{511, 0}";
+			sepNavVisRange = "{0, 517}";
 		};
 	};
 	B5BFA81C117F9CAD008B450B /* Person.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {925, 1073}}";
-			sepNavSelRange = "{312, 10}";
-			sepNavVisRange = "{0, 1263}";
+			sepNavIntBoundsRect = "{{0, 0}, {925, 915}}";
+			sepNavSelRange = "{260, 0}";
+			sepNavVisRange = "{0, 1166}";
 		};
 	};
 	B5BFA83B117FA0E3008B450B /* Model.h */ = {
@@ -152,117 +117,10 @@
 	};
 	B5BFA841117FA1AA008B450B /* BossViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {925, 892}}";
-			sepNavSelRange = "{419, 0}";
-			sepNavVisRange = "{0, 425}";
+			sepNavIntBoundsRect = "{{0, 0}, {925, 915}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 247}";
 			sepNavWindowFrame = "{{38, 157}, {1354, 1235}}";
 		};
-	};
-	B5BFA842117FA1AA008B450B /* BossViewController.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {925, 915}}";
-			sepNavSelRange = "{319, 0}";
-			sepNavVisRange = "{0, 1138}";
-		};
-	};
-	B5BFA8B0117FB22A008B450B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B5BFA83B117FA0E3008B450B /* Model.h */;
-		name = "Model.h: 9";
-		rLen = 0;
-		rLoc = 161;
-		rType = 0;
-		vrLen = 181;
-		vrLoc = 0;
-	};
-	B5BFA8B1117FB22A008B450B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623240D0F684500981E51 /* NSArchiveExampleAppDelegate.h */;
-		name = "NSArchiveExampleAppDelegate.h: 19";
-		rLen = 0;
-		rLoc = 480;
-		rType = 0;
-		vrLen = 489;
-		vrLoc = 0;
-	};
-	B5BFA8B2117FB22A008B450B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B5BFA841117FA1AA008B450B /* BossViewController.h */;
-		name = "BossViewController.h: 20";
-		rLen = 0;
-		rLoc = 419;
-		rType = 0;
-		vrLen = 425;
-		vrLoc = 0;
-	};
-	B5BFA8B3117FB22A008B450B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B5BFA802117F9A96008B450B /* Persistance.h */;
-		name = "Persistance.h: 10";
-		rLen = 0;
-		rLoc = 162;
-		rType = 0;
-		vrLen = 610;
-		vrLoc = 0;
-	};
-	B5BFA8B4117FB22A008B450B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* NSArchiveExampleAppDelegate.m */;
-		name = "NSArchiveExampleAppDelegate.m: 21";
-		rLen = 0;
-		rLoc = 442;
-		rType = 0;
-		vrLen = 689;
-		vrLoc = 0;
-	};
-	B5BFA8B5117FB22A008B450B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B5BFA803117F9A96008B450B /* Persistance.m */;
-		name = "Persistance.m: 11";
-		rLen = 0;
-		rLoc = 181;
-		rType = 0;
-		vrLen = 1216;
-		vrLoc = 1191;
-	};
-	B5BFA8B6117FB22A008B450B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B5BFA81B117F9CAD008B450B /* Person.h */;
-		name = "Person.h: 24";
-		rLen = 0;
-		rLoc = 522;
-		rType = 0;
-		vrLen = 528;
-		vrLoc = 0;
-	};
-	B5BFA8B7117FB22A008B450B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B5BFA81C117F9CAD008B450B /* Person.m */;
-		name = "Person.m: 18";
-		rLen = 10;
-		rLoc = 312;
-		rType = 0;
-		vrLen = 1263;
-		vrLoc = 0;
-	};
-	B5BFA8B8117FB22A008B450B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B5BFA842117FA1AA008B450B /* BossViewController.m */;
-		name = "BossViewController.m: 17";
-		rLen = 0;
-		rLoc = 346;
-		rType = 0;
-		vrLen = 1075;
-		vrLoc = 0;
-	};
-	B5BFA8B9117FB22A008B450B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B5BFA842117FA1AA008B450B /* BossViewController.m */;
-		name = "BossViewController.m: 20";
-		rLen = 0;
-		rLoc = 319;
-		rType = 0;
-		vrLen = 1138;
-		vrLoc = 0;
 	};
 }
